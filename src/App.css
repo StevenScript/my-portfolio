@@ -1,38 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;700&display=swap");
+
+body,
+html,
+#root,
 .App {
-  text-align: center;
+  height: 100%;
+  margin: 0;
+  font-family: "Comfortaa";
+  color: white;
+  display: flex;
+  justify-content: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-image: url("../public/imgs/hedmark-fylke-norway-khedmark-norvegiia-zima-sneg-sugroby-le.jpg");
+  background-size: inherit;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.content {
+  margin-top: 14rem;
+  width: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  align-items: center;
+}
+
+.top-right {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: rgba(0, 0, 0, 0.82);
+  padding: 0.5rem;
+  padding-right: 2rem;
+  min-width: 6rem;
+  padding-left: 2rem;
+  min-height: 8.25rem;
+  border-bottom-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  text-align: center;
+  font-family: Comfortaa;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.center-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.grid-item {
+  background-color: rgba(0, 0, 0, 0.82);
+  display: flex;
+  width: 290px;
+  height: 287px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.grid-item:hover {
+  background-color: rgba(0, 0, 0, 1);
+  transform: scale(1.1);
+}
+
+.grid-itemblank {
+  display: flex;
+  width: 290px;
+  height: 287px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.menu {
+  width: 7.4rem;
+  height: 493px;
+  position: absolute;
+  flex-shrink: 0;
+  top: 10px;
+  right: 10px;
+  background-color: rgba(0, 0, 0, 0.82);
+  padding: 1rem;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  margin-top: 9.25rem;
+}
+
+.menu-item {
+  background-color: #3b5998;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100px; /* Adjust as needed */
+  margin-top: 0.5rem;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.menu-item:hover {
+  background-color: #0e1f44;
+  transform: scale(1.1);
+}
+
+/* Game Styling */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 10px;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  background-color: lightgray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.mole {
+  background-color: brown;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
 }
