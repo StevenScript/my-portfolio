@@ -54,6 +54,7 @@ const NavBar = () => {
         >
           Home
         </button>
+
         <button
           className="
             block w-full text-center
@@ -66,6 +67,33 @@ const NavBar = () => {
         >
           About Me
         </button>
+
+        <button
+          className="
+            block w-full text-center
+            bg-blue-700 hover:bg-blue-800
+            text-white py-2 rounded-md
+            transition transform hover:scale-110
+            text-xs
+          "
+          onClick={() => handleNavigation("/projects")}
+        >
+          Projects
+        </button>
+
+        <button
+          className="
+            block w-full text-center
+            bg-blue-700 hover:bg-blue-800
+            text-white py-2 rounded-md
+            transition transform hover:scale-110
+            text-xs
+          "
+          onClick={() => handleNavigation("/skills")}
+        >
+          Skills
+        </button>
+
         <button
           className="
             block w-full text-center
@@ -77,18 +105,6 @@ const NavBar = () => {
           onClick={() => handleNavigation("/social-links")}
         >
           Socials
-        </button>
-        <button
-          className="
-            block w-full text-center
-            bg-blue-700 hover:bg-blue-800
-            text-white py-2 rounded-md
-            transition transform hover:scale-110
-            text-xs
-          "
-          onClick={() => handleNavigation("/Whack-A-Mole")}
-        >
-          Latest
         </button>
       </div>
     </div>

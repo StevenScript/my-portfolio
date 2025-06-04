@@ -9,12 +9,12 @@ const Projects = () => {
       description:
         "A fullstack event promotion and ticketing system built with React, Spring Boot, and MySQL, deployed on AWS.",
       techStack: ["React", "Java", "Spring Boot", "MySQL", "Docker", "AWS"],
-      imageUrl: "/imgs/concert-screenshot.png", // Place a screenshot at public/imgs/…
+      imageUrl: process.env.PUBLIC_URL + "/imgs/concert-screenshot.jpg",
       repoLinkFront:
         "https://github.com/StevenScript/concert-management-frontend",
-      repoLinkBack: "https://github.com/StevenScript/concertManagement_Server", // Update with your repo URL
+      repoLinkBack: "https://github.com/StevenScript/concertManagement_Server",
       liveLink:
-        "http://concert-frontend-demo-7350.s3-website-us-east-1.amazonaws.com/", // Update with your deployed URL
+        "http://concert-frontend-demo-7350.s3-website-us-east-1.amazonaws.com/",
     },
     // Add additional projects here as objects
   ];
@@ -32,7 +32,8 @@ const Projects = () => {
               description={project.description}
               techStack={project.techStack}
               imageUrl={project.imageUrl}
-              repoLink={project.repoLink}
+              repoLinkFront={project.repoLinkFront} // ← pass frontend repo
+              repoLinkBack={project.repoLinkBack} // ← pass backend repo
               liveLink={project.liveLink}
             />
           ))}
