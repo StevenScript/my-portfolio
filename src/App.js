@@ -8,6 +8,7 @@ import "./App.css";
 import NavBar from "./components/NavBar";
 import Projects from "./pages/Projects";
 import Skills from "./pages/Skills";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -19,9 +20,8 @@ const App = () => {
         <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/skills" element={<Skills />} />
-        <Route path="/social-links" element={<Socials />} />
-        <Route path="/Whack-A-Mole" element={<WhackAMole />} />
       </Routes>
+      <Footer />
     </Router>
   );
 };
