@@ -9,6 +9,7 @@ import NavBar from "./components/NavBar";
 import Projects from "./pages/Projects";
 import Skills from "./pages/Skills";
 import Footer from "./components/Footer";
+import Resume from "./pages/Resume";
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
         <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/skills" element={<Skills />} />
+        <Route path="/resume" element={<Resume />} />
       </Routes>
       <Footer />
     </Router>
