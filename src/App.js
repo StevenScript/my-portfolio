@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import LandingPage from "./components/LandingPage"; // Import the LandingPage component
+import LandingPage from "./pages/LandingPage"; // Import the LandingPage component
 import Socials from "./components/Socials";
 import About from "./components/About";
 import WhackAMole from "./components/WhackAMole";
