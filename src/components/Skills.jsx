@@ -1,7 +1,7 @@
+// src/components/Skills.jsx
 import React from "react";
 
 const Skills = () => {
-  // List your skills grouped by category
   const skillCategories = [
     {
       category: "Languages",
@@ -35,17 +35,17 @@ const Skills = () => {
   ];
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-start bg-hero-pattern bg-cover bg-center py-2">
+    <div className="w-full flex flex-col items-center justify-start bg-slate-900 py-4 text-white">
       <div className="w-full max-w-5xl px-4">
-        <h1 className="text-3xl font-bold text-white mb-8">Skills</h1>
+        <h1 className="text-3xl font-bold mb-6">Skills</h1>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {skillCategories.map((group) => (
             <div
               key={group.category}
-              className="bg-black bg-opacity-70 rounded-lg p-6"
+              className="bg-gray-800 rounded-lg p-4 shadow"
             >
-              <h2 className="text-xl font-semibold text-white mb-4">
+              <h2 className="text-xl font-semibold text-white mb-3">
                 {group.category}
               </h2>
               <ul className="space-y-2">
@@ -55,7 +55,7 @@ const Skills = () => {
                     className="
                       inline-block
                       bg-blue-600 hover:bg-blue-700
-                      text-white px-3 py-1 rounded
+                      text-white px-2 py-1 rounded
                       transition
                       text-sm
                     "
