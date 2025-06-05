@@ -1,16 +1,15 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.07f42c07.css",
-    "main.js": "/my-portfolio/static/js/main.73d49418.js",
+    "main.css": "/my-portfolio/static/css/main.fcbd5fe8.css",
+    "main.js": "/my-portfolio/static/js/main.8fc98ec0.js",
     "static/js/453.acca0757.chunk.js": "/my-portfolio/static/js/453.acca0757.chunk.js",
-    "static/media/hedmark-fylke-norway-khedmark-norvegiia-zima-sneg-sugroby-le.jpg": "/my-portfolio/static/media/hedmark-fylke-norway-khedmark-norvegiia-zima-sneg-sugroby-le.bba68564677f14f97ab2.jpg",
     "index.html": "/my-portfolio/index.html",
-    "main.07f42c07.css.map": "/my-portfolio/static/css/main.07f42c07.css.map",
-    "main.73d49418.js.map": "/my-portfolio/static/js/main.73d49418.js.map",
+    "main.fcbd5fe8.css.map": "/my-portfolio/static/css/main.fcbd5fe8.css.map",
+    "main.8fc98ec0.js.map": "/my-portfolio/static/js/main.8fc98ec0.js.map",
     "453.acca0757.chunk.js.map": "/my-portfolio/static/js/453.acca0757.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.07f42c07.css",
-    "static/js/main.73d49418.js"
+    "static/css/main.fcbd5fe8.css",
+    "static/js/main.8fc98ec0.js"
   ]
 }
