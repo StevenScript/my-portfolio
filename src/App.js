@@ -1,11 +1,8 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import LandingPage from "./pages/LandingPage"; // Import the LandingPage component
-import Socials from "./components/Socials";
-import About from "./components/About";
-import WhackAMole from "./components/WhackAMole";
+import About from "./pages/About";
 import "./App.css";
-import NavBar from "./components/NavBar";
 import Projects from "./pages/Projects";
 import Skills from "./pages/Skills";
 import Footer from "./components/Footer";
@@ -14,7 +11,6 @@ import Resume from "./pages/Resume";
 const App = () => {
   return (
     <Router>
-      <NavBar />
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/my-portfolio/" element={<LandingPage />} />

@@ -1,43 +1,41 @@
 import React from "react";
+import SiteHeader from "../components/SiteHeader";
+import PageWrapper from "../components/PageWrapper";
+import PageHeader from "../components/PageHeader";
 
 const Resume = () => {
   return (
-    <div
-      className="
-        min-h-screen
-        flex flex-col items-center justify-start
-        bg-hero-pattern bg-cover bg-center
-        py-12
-      "
-    >
-      <div className="w-full max-w-4xl px-4">
-        <h1 className="text-3xl font-bold text-white mb-6">Resume</h1>
+    <>
+      {/* Shared profile + nav + marquee */}
+      <SiteHeader />
 
-        <div className="mb-4">
+      <PageWrapper>
+        <PageHeader
+          title="Resume"
+          subtitle="A snapshot of my skills, education, and experience as a developer."
+        />
+
+        {/* Download Button */}
+        <div className="mb-6 text-center">
           <a
             href={process.env.PUBLIC_URL + "/resume.pdf"}
             download
-            className="
-              inline-block
-              bg-blue-600 hover:bg-blue-700
-              text-white px-4 py-2 rounded-md
-              transition transform hover:scale-105
-              text-base font-medium
-            "
+            className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md transition transform hover:scale-105 text-base font-medium shadow-md"
           >
             Download PDF
           </a>
         </div>
 
-        <div className="w-full h-[80vh] border-2 border-white rounded-md overflow-hidden">
+        {/* PDF Viewer */}
+        <div className="w-full max-w-4xl mx-auto border-2 border-white rounded-lg overflow-hidden shadow-lg">
           <iframe
             src={process.env.PUBLIC_URL + "/resume.pdf"}
-            title="Resume"
-            className="w-full h-full"
+            title="Resume PDF"
+            className="w-full h-[80vh] bg-white"
           />
         </div>
-      </div>
-    </div>
+      </PageWrapper>
+    </>
   );
 };
 
