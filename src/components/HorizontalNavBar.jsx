@@ -11,8 +11,6 @@ const HorizontalNavBar = () => {
     { name: "About", to: "/about" },
     { name: "Resume", to: "/resume" },
     { name: "Projects", to: "/projects" },
-    { name: "Skills", to: "/skills" },
-    { name: "Socials", to: "/social-links" },
   ];
 
   return (

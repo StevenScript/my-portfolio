@@ -1,4 +1,3 @@
-// src/components/Skills.jsx
 import React from "react";
 
 const Skills = () => {
@@ -35,30 +34,24 @@ const Skills = () => {
   ];
 
   return (
-    <div className="w-full flex flex-col items-center justify-start bg-slate-900 py-4 text-white">
-      <div className="w-full max-w-5xl px-4">
-        <h1 className="text-3xl font-bold mb-6">Skills</h1>
+    <div className="w-full py-12 text-white">
+      <div className="w-full max-w-6xl mx-auto px-4">
+        <h2 className="text-3xl font-bold mb-8">Skills</h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {skillCategories.map((group) => (
             <div
               key={group.category}
-              className="bg-gray-800 rounded-lg p-4 shadow"
+              className="bg-white bg-opacity-10 backdrop-blur-md p-5 rounded-xl text-white shadow-md"
             >
-              <h2 className="text-xl font-semibold text-white mb-3">
+              <h3 className="text-xl font-semibold mb-3 text-blue-200">
                 {group.category}
-              </h2>
-              <ul className="space-y-2">
+              </h3>
+              <ul className="flex flex-wrap gap-2">
                 {group.skills.map((skill) => (
                   <li
                     key={skill}
-                    className="
-                      inline-block
-                      bg-blue-600 hover:bg-blue-700
-                      text-white px-2 py-1 rounded
-                      transition
-                      text-sm
-                    "
+                    className="bg-blue-600 hover:bg-blue-700 text-white px-2 py-1 rounded text-sm transition"
                   >
                     {skill}
                   </li>
