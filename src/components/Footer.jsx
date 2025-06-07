@@ -1,8 +1,6 @@
-import React from "react";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 const Footer = () => {
-  // Replace these URLs with your actual profile links
   const profiles = [
     {
       name: "GitHub",

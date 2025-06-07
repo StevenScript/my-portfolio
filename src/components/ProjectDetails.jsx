@@ -1,5 +1,3 @@
-import React from "react";
-
 const ProjectDetails = ({ highlights = [] }) => {
   return (
     <div className="bg-white bg-opacity-10 backdrop-blur-md p-5 rounded-xl text-white text-sm leading-relaxed shadow-md hover:shadow-lg transition">

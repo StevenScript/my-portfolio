@@ -1,4 +1,3 @@
-import React from "react";
 import SiteHeader from "../components/SiteHeader";
 import PageWrapper from "../components/PageWrapper";
 import PageHeader from "../components/PageHeader";
@@ -27,7 +26,7 @@ const Projects = () => {
         "Built with SaaS best practices: DTOs, layers, testing, and logging",
       ],
     },
-    // Add more projects here as needed
+    // TODO: Add more projects in future
   ];
 
   return (

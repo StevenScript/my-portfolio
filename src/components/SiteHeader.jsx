@@ -1,6 +1,5 @@
-import React from "react";
 import { useNavigate } from "react-router-dom";
-import HorizontalNavBar from "./HorizontalNavBar";
+import HorizontalNavBar from "./NavBar";
 import Marquee from "./Marquee";
 
 const SiteHeader = () => {

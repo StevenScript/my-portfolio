@@ -1,5 +1,3 @@
-import React from "react";
-
 const PageHeader = ({ title, subtitle }) => {
   return (
     <div className="relative w-full text-center mt-4 mb-10">

@@ -1,4 +1,3 @@
-import React from "react";
 import SiteHeader from "../components/SiteHeader";
 import Skills from "../components/Skills";
 import ProjectsSection from "../components/ProjectSection";

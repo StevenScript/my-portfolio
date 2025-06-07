@@ -1,35 +1,60 @@
-import React from "react";
-
 const Skills = () => {
   const skillCategories = [
     {
       category: "Languages",
-      skills: ["Java", "JavaScript", "SQL", "HTML", "CSS"],
+      skills: ["Java", "JavaScript", "Python", "SQL", "HTML", "CSS"],
     },
     {
       category: "Frontend",
-      skills: ["React", "Tailwind CSS", "React Router", "ReactBits"],
+      skills: [
+        "React",
+        "Tailwind CSS",
+        "React Router",
+        "Ionic Framework",
+        "@mui/material",
+      ],
     },
     {
       category: "Backend",
-      skills: ["Spring Boot", "Node.js (optional)", "Express.js (optional)"],
+      skills: [
+        "Spring Boot",
+        "Node.js",
+        "Express.js",
+        "JWT Auth (Spring Security)",
+        "Lombok",
+        "Bucket4j (Rate Limiting)",
+      ],
     },
     {
-      category: "Databases",
-      skills: ["MySQL", "PostgreSQL (optional)", "MongoDB (optional)"],
+      category: "Data Handling",
+      skills: ["MySQL", "PostgreSQL", "MongoDB", "RESTful APIs"],
     },
     {
       category: "DevOps & Tools",
       skills: [
         "Docker",
         "Git & GitHub",
-        "AWS (Elastic Beanstalk, S3)",
-        "CI/CD (GitHub Actions)",
+        "GitHub Actions (CI/CD)",
+        "AWS EC2",
+        "AWS S3",
+        "AWS RDS",
+        "AWS Lambda",
+        "AWS Cognito",
+        "AWS Elastic Beanstalk",
+        "VS Code",
+        "Postman",
+        "Figma",
       ],
     },
     {
       category: "Testing",
-      skills: ["JUnit", "React Testing Library", "Postman"],
+      skills: [
+        "JUnit",
+        "Jest",
+        "React Testing Library",
+        "Mockito",
+        "Test-Driven Development (TDD)",
+      ],
     },
   ];
 
